@@ -1,0 +1,290 @@
+/*掌上秒杀 second kill*/
+.hm_sk{ }
+.hm_sk .sk_icon{
+	background: url("../images/seckill-icon.png") no-repeat;
+	background-size: 16px 20px;
+	width: 16px;
+	height: 20px;
+	float: left;
+	margin-top: 6px;
+}
+
+.hm_sk .sk_name{
+	color: #d8505c;
+	font-size: 15px;
+	float: left;
+}
+
+.hm_sk .sk_time{
+	float: left;
+	margin-top: 8px;
+}
+
+.hm_sk .sk_name > span{
+	float: left;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	background:  #333;
+	color: #fff;
+	margin-left: 3px;
+}
+
+.hm_sk .sk_name > span:nth-child(3n){
+	background: #fff;
+	color: #333;
+	width: 5px;
+}
+
+.hm_sk .product_box_con > ul{
+	width: 100%;
+	font-size: 12px;
+	padding: 10px 0;
+}
+
+.hm_sk .product_box_con > ul > li{
+	width: 33.333%;
+	float: left;
+	text-align: center;
+}
+
+.hm_sk .product_box_con > ul > li > a{
+	display: block;
+	width: 100%;
+	border-right:  1px solid #e0e0e0;
+}
+
+.hm_sk .product_box_con > ul > li:last-child >a{
+	border-right: 0;
+}
+
+.hm_sk .product_box_con > ul > li > a > img{
+	width: 64%;
+	display: block;
+	margin: 0 auto;
+}
+
+/*
+E:first-of-type   选择E同类型的同级的第�?个元�?
+E:last-of-type   选择E同类型的同级的最后个元素
+E:nth-of-type(n)   选择E同类型的同级的第n个元�?
+ */
+
+.hm_sk .product_box_con > ul > li >p:first-of-type{
+	color: #d8505c;
+	padding:  5px;
+}
+
+.hm_sk .product_box_con > ul > li >p:last-of-type{
+	text-decoration:  line-through;  /*删除�?*/
+	color: #666;
+	padding:  5px;
+}
+
+/*组合样式*/
+.w_50{
+	width: 50%;
+	display: block;
+}
+
+.w_50 > img{
+	display: block;
+	width: 100%;
+}
+
+.b_left{
+	border-left: 1px solid #e0e0e0;
+}
+
+.b_right{
+	border-right: 1px solid #e0e0e0;
+}
+
+.b_bottom{
+	border-bottom: 1px solid #e0e0e0;
+}
+
+/*产品*/
+.heima_product{
+    padding: 40px 0;
+}
+.nav-tabs-product {
+    border-bottom: 1px solid #ccc;
+}
+.nav-tabs-product > li {
+    float: left;
+    padding-left: 20px;
+}
+.nav-tabs-product > li > a {
+    margin-right: 4px;
+    line-height: 1.42857143;
+    border-radius: 4px 4px 0 0;
+}
+.nav-tabs-product > li > a:hover {
+    background: #f5f5f5;
+}
+.nav-tabs-product > li > a
+.nav-tabs-product > li.active > a,
+.nav-tabs-product > li.active > a:hover,
+.nav-tabs-product > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    border: none;
+    background: #f5f5f5;
+    border-bottom: 5px solid #E92322;
+}
+.nav-tabs-product.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+}
+.nav-tabs-product.nav-justified > li {
+    float: none;
+}
+.nav-tabs-product.nav-justified > li > a {
+    margin-bottom: 8px;
+    text-align: center;
+}
+.nav-tabs-product.nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto;
+}
+@media (max-width: 767px) {
+    .nav-tabs-product.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-tabs-product.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+}
+.nav-tabs-product.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px;
+}
+.nav-tabs-product.nav-justified > .active > a,
+.nav-tabs-product.nav-justified > .active > a:hover,
+.nav-tabs-product.nav-justified > .active > a:focus {
+    border: 1px solid #ddd;
+}
+@media (max-width: 767px) {
+    .nav-tabs-product.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs-product.nav-justified > .active > a,
+    .nav-tabs-product.nav-justified > .active > a:hover,
+    .nav-tabs-product.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+}
+
+/*页签父盒�?*/
+.nav-tabs-product-parent{
+    width: 100%;
+    overflow: hidden;
+}
+
+/*产品盒子*/
+.product_box{
+    height: 200px;
+    width: 100%;
+    display: block;
+    background: #fff;
+    box-shadow:2px 2px 3px 1px #d8d8d8;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.product_box p{
+    margin-bottom: 0;
+}
+.product_box.active{
+       position: relative;
+}
+
+.product_box .product_box_left{
+    overflow: hidden;
+}
+.product_box .product_box_left h3{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.product_box.active .product_box_left{
+    color: #fff;
+}
+.product_box .product_box_left > div{
+    margin-top: 10px;
+}
+.product_box .product_box_left > div > p{
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+.product_box .product_box_left .progress{
+    height: 10px;
+}
+.product_box .product_box_right{
+    float: right;
+    width: 108px;
+    height: 100%;
+    text-align: center;
+    position:relative;
+    border-left: 1px dashed #ccc;
+}
+.product_box .product_box_right::before,
+.product_box .product_box_right::after{
+    content: "";
+    position: absolute;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #f5f5f5;
+}
+.product_box .product_box_right::before{
+    top: -6px;
+    box-shadow:0 -2px 2px #d8d8d8 inset;
+}
+.product_box .product_box_right::after{
+    bottom: -6px;
+    box-shadow:0 2px 2px #d8d8d8 inset;
+}
+
+.product_box_right p:first-of-type{
+    margin-bottom: 0;
+    margin-top: 25px;
+    color: #E92322;
+}
+.product_box.active .product_box_right p{
+    color: #fff;
+}
+.product_box_right p:first-of-type b{
+    font-size: 44px;
+}
+.product_box_right p:first-of-type sub{
+    bottom: 0;
+}
+/*工具提示*/
+.toolTip_box{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+.toolTip_box > span{
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+}
+.toolTip_box .bao{
+    color: green;
+    border: 1px solid green;
+}
+.toolTip_box .bei{
+    color: red;
+    border: 1px solid red;
+}
